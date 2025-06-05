@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: meu-assistente-virtual
+    env: docker
+    repo: https://github.com/LucioSilvaGx2/meu-assistente-virtual
+    branch: main
+    region: oregon
+    plan: free
+    dockerfilePath: deploy/Dockerfile
+    buildCommand: ""        # Deixe vazio, já usa Dockerfile
+    startCommand: ""        # Deixe vazio para usar CMD do Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false          # Adicione manualmente pelo painel do Render
+    ports:
+      - port: 8085
