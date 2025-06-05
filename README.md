@@ -167,7 +167,11 @@ http://localhost:8085/api/assistenteDigital
 Para usar a interface gráfica basta entrar no link.
 http://localhost:8085/
 
-### 4. Render
+---
+
+## 🚀 Implantação externa
+
+### Render
 
 Para usar a interface gráfica basta entrar no link.
 https://meu-assistente-virtual.onrender.com/
