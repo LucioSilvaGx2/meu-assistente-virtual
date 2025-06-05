@@ -159,7 +159,7 @@ OPENAI_API_KEY=sua-chave-aqui
 docker compose -f deploy/docker-compose.yml up --build -d
 ```
 
-### 3. Executar com Docker Compose
+### 3. Acesso a Aplicação
 
 Para usar a interface gráfica basta entrar no link.
 http://localhost:8085/
@@ -173,7 +173,7 @@ http://localhost:8085/api/assistenteDigital
 
 ### Render
 
-Para usar a interface gráfica basta entrar no link.
+Para usar a interface gráfica basta entrar no link:
 https://meu-assistente-virtual.onrender.com/
 
 URL API:
