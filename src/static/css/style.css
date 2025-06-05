@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
-    --primary-color: #4CAF50; /* Um verde bonito */
+    --primary-color: #4CAF50;
     --primary-dark-color: #388E3C;
-    --secondary-color: #f0f0f0; /* Fundo de mensagens */
+    --secondary-color: #f0f0f0; 
     --background-color: #e0e0e0;
     --text-color: #333;
     --border-radius: 8px;
@@ -48,10 +48,10 @@ h1 {
 .chat-box {
     flex-grow: 1;
     padding: 20px;
-    overflow-y: auto; /* Para permitir scroll nas conversas */
+    overflow-y: auto; 
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaço entre as mensagens */
+    gap: 15px; 
 }
 
 .message {
@@ -82,7 +82,7 @@ h1 {
     padding: 20px;
     border-top: 1px solid #eee;
     background-color: #f9f9f9;
-    gap: 10px; /* Espaço entre input e botão */
+    gap: 10px; 
 }
 
 #user-input {
@@ -91,7 +91,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: var(--border-radius);
     font-size: 1em;
-    outline: none; /* Remove a borda de foco padrão */
+    outline: none; 
 }
 
 #user-input:focus {
