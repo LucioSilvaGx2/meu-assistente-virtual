@@ -1,0 +1,194 @@
+[
+  {
+    "id": "PROD001",
+    "nome": "Notebook Dell Inspiron 15",
+    "categoria": "Eletrônicos, Notebook",
+    "preco": 2899.99,
+    "descricao": "Notebook ideal para trabalho e estudos com ótimo desempenho.",
+    "especificacoes": {
+      "tela": "15.6 polegadas",
+      "processador": "Intel Core i5",
+      "memoria": "8GB RAM",
+      "armazenamento": "256GB SSD"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD006",
+    "nome": "Notebook Acer Aspire 5",
+    "categoria": "Eletrônicos, Notebook",
+    "preco": 3499.00,
+    "descricao": "Laptop com processador de última geração, perfeito para multitarefas e jogos leves.",
+    "especificacoes": {
+      "tela": "14 polegadas Full HD",
+      "processador": "AMD Ryzen 7",
+      "memoria": "16GB RAM",
+      "armazenamento": "512GB SSD"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD007",
+    "nome": "Notebook Samsung Book",
+    "categoria": "Eletrônicos, Notebook",
+    "preco": 2599.50,
+    "descricao": "Notebook leve e compacto para uso diário, ideal para estudantes.",
+    "especificacoes": {
+      "tela": "15.6 polegadas HD",
+      "processador": "Intel Core i3",
+      "memoria": "4GB RAM",
+      "armazenamento": "1TB HDD"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD008",
+    "nome": "MacBook Air M1",
+    "categoria": "Eletrônicos, Notebook",
+    "preco": 6799.00,
+    "descricao": "Portátil Apple com chip M1, performance excepcional e longa duração de bateria.",
+    "especificacoes": {
+      "tela": "13.3 polegadas Retina",
+      "processador": "Apple M1",
+      "memoria": "8GB RAM",
+      "armazenamento": "256GB SSD"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD002",
+    "nome": "Smartphone Samsung Galaxy A14",
+    "categoria": "Eletrônicos, Smartphone",
+    "preco": 1399.00,
+    "descricao": "Smartphone com tela grande e ótimo custo-benefício.",
+    "especificacoes": {
+      "sistema_operacional": "Android",
+      "tela": "6.6 polegadas",
+      "memoria": "4GB RAM",
+      "armazenamento": "128GB",
+      "bateria": "5000mAh"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD009",
+    "nome": "iPhone 15 Pro Max",
+    "categoria": "Eletrônicos, Smartphone",
+    "preco": 9899.00,
+    "descricao": "O mais recente iPhone com câmera avançada e chip A17 Bionic.",
+    "especificacoes": {
+      "sistema_operacional": "IOS",
+      "tela": "6.7 polegadas Super Retina XDR",
+      "memoria": "8GB RAM",
+      "armazenamento": "256GB",
+      "bateria": "Excelente duração"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD010",
+    "nome": "Smartphone Xiaomi Redmi Note 12",
+    "categoria": "Eletrônicos, Smartphone",
+    "preco": 1199.00,
+    "descricao": "Smartphone com câmera de alta resolução e carregamento rápido.",
+    "especificacoes": {
+      "sistema_operacional": "Android",
+      "tela": "6.67 polegadas AMOLED",
+      "memoria": "6GB RAM",
+      "armazenamento": "128GB",
+      "bateria": "5000mAh"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD003",
+    "nome": "Liquidificador Philips Walita",
+    "categoria": "Eletrodomésticos, Culinária",
+    "preco": 299.90,
+    "descricao": "Liquidificador potente para receitas do dia a dia.",
+    "especificacoes": {
+      "potencia": "800W",
+      "capacidade": "2L",
+      "velocidades": "12"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD011",
+    "nome": "Batedeira Planetária Arno",
+    "categoria": "Eletrodomésticos, Culinária",
+    "preco": 459.00,
+    "descricao": "Batedeira robusta para diversas receitas, com movimento planetário.",
+    "especificacoes": {
+      "potencia": "600W",
+      "capacidade": "4L",
+      "velocidades": "8 + Pulsar"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD004",
+    "nome": "Cafeteira Elétrica Mondial",
+    "categoria": "Eletrodomésticos",
+    "preco": 199.99,
+    "descricao": "Cafeteira prática e eficiente para seu café diário.",
+    "especificacoes": {
+      "capacidade": "1,2L",
+      "voltagem": "110V/220V",
+      "funcoes": "Mantém aquecido"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD012",
+    "nome": "Air Fryer Britânia BFR20P",
+    "categoria": "Eletrodomésticos, Culinária",
+    "preco": 499.00,
+    "descricao": "Fritadeira sem óleo para refeições mais saudáveis e saborosas.",
+    "especificacoes": {
+      "capacidade": "4L",
+      "potencia": "1500W",
+      "temperatura_max": "200°C"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD005",
+    "nome": "Fone de Ouvido JBL Tune 510BT",
+    "categoria": "Áudio",
+    "preco": 249.00,
+    "descricao": "Fone sem fio com excelente qualidade de som e bateria de longa duração.",
+    "especificacoes": {
+      "tipo": "Bluetooth",
+      "bateria": "40 horas",
+      "cor": "Preto"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD013",
+    "nome": "Caixa de Som JBL Flip 6",
+    "categoria": "Áudio",
+    "preco": 699.00,
+    "descricao": "Caixa de som portátil com áudio potente e resistente à água.",
+    "especificacoes": {
+      "potencia": "30W RMS",
+      "conectividade": "Bluetooth 5.1",
+      "resistencia": "IP67"
+    },
+    "disponivel": true
+  },
+  {
+    "id": "PROD014",
+    "nome": "Headset Gamer HyperX Cloud Stinger Core",
+    "categoria": "Áudio",
+    "preco": 349.90,
+    "descricao": "Headset com áudio imersivo e microfone com cancelamento de ruído, ideal para jogos.",
+    "especificacoes": {
+      "conexao": "P2",
+      "drivers": "40mm",
+      "plataformas": "PC, PS4, Xbox One, Switch"
+    },
+    "disponivel": true
+  }
+]

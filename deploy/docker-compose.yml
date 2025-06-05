@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  assistente-virtual:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    container_name: meu-assistente-virtual-cont
+    ports:
+      - "8085:8085"
+    restart: unless-stopped

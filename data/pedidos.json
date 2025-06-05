@@ -1,0 +1,42 @@
+[
+    {
+      "pedido_id": "12345",
+      "status": "Em trânsito",
+      "data_compra": "2025-05-25",
+      "previsao_entrega": "2025-05-30",
+      "produtos": [
+        {
+          "id": "PROD001",
+          "nome": "Notebook Dell Inspiron 15",
+          "quantidade": 1
+        }
+      ]
+    },
+    {
+      "pedido_id": "12346",
+      "status": "Entregue",
+      "data_compra": "2025-05-20",
+      "previsao_entrega": "2025-05-25",
+      "produtos": [
+        {
+          "id": "PROD005",
+          "nome": "Fone de Ouvido JBL Tune 510BT",
+          "quantidade": 2
+        }
+      ]
+    },
+    {
+      "pedido_id": "12347",
+      "status": "Cancelado",
+      "data_compra": "2025-05-27",
+      "previsao_entrega": "2025-06-01",
+      "produtos": [
+        {
+          "id": "PROD003",
+          "nome": "Liquidificador Philips Walita",
+          "quantidade": 1
+        }
+      ]
+    }
+  ]
+  

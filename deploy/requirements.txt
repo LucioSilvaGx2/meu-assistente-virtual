@@ -1,0 +1,17 @@
+# 🔗 LangChain core
+langchain>=0.1.0
+
+# 🔐 OpenAI LLM e embeddings
+openai==1.76.2
+langchain-openai>=0.1.0
+
+# 🧠 Vetorstore local
+faiss-cpu
+langchain-community>=0.0.30  # Contém FAISS, TextLoader, etc.
+
+# 🌐 API backend
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# ⚙️ Variáveis de ambiente
+python-dotenv==1.0.1

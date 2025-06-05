@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --primary-color: #4CAF50; /* Um verde bonito */
+    --primary-dark-color: #388E3C;
+    --secondary-color: #f0f0f0; /* Fundo de mensagens */
+    --background-color: #e0e0e0;
+    --text-color: #333;
+    --border-radius: 8px;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+.chat-container {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 500px; /* Altura mínima para o container */
+}
+
+h1 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.8em;
+    border-bottom: 2px solid var(--primary-dark-color);
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto; /* Para permitir scroll nas conversas */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre as mensagens */
+}
+
+.message {
+    max-width: 80%;
+    padding: 12px 18px;
+    border-radius: var(--border-radius);
+    line-height: 1.5;
+    word-wrap: break-word; /* Garante que o texto quebre */
+}
+
+.message.client {
+    background-color: var(--primary-color);
+    color: white;
+    align-self: flex-end; /* Alinha à direita */
+    border-bottom-right-radius: 0;
+}
+
+.message.assistant {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    align-self: flex-start; /* Alinha à esquerda */
+    border-bottom-left-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chat-input {
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    background-color: #f9f9f9;
+    gap: 10px; /* Espaço entre input e botão */
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1em;
+    outline: none; /* Remove a borda de foco padrão */
+}
+
+#user-input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+#send-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#send-button:hover {
+    background-color: var(--primary-dark-color);
+    transform: translateY(-2px);
+}
+
+#send-button:active {
+    background-color: var(--primary-dark-color);
+    transform: translateY(0);
+}
