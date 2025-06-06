@@ -6,12 +6,11 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.document_loaders import TextLoader
 from langchain.vectorstores import FAISS
 from langchain.llms import OpenAI
-from langchain.chains import RetrievalQA
+from langchain.chains import RetrievalQA, LLMChain
 from langchain.schema import Document
 from langchain.text_splitter import CharacterTextSplitter
 from dotenv import load_dotenv
-from .prompts import prompt_produto, prompt_pedido, prompt_politica
-from langchain.chains import RetrievalQAWithSourcesChain
+from .prompts import prompt_produto, prompt_pedido, prompt_politica, prompt_conversa 
 from datetime import datetime, timedelta
 
 # Carregar variáveis de ambiente
@@ -167,3 +166,10 @@ def pedido_existe(numero: str) -> bool:
 def extrair_numero_pedido(texto: str) -> str:
     match = re.search(r"#?(\d{3,})", texto)
     return match.group(1) if match else None
+
+# Conversar com o usuário
+def conversar_usuario(pergunta: str) -> str:
+    llm = OpenAI(temperature=0.7)
+    chain = LLMChain(llm=llm, prompt=prompt_conversa)
+    resposta = chain.run(pergunta)
+    return resposta

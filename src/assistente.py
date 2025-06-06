@@ -1,4 +1,4 @@
-from .rag_system import buscar_produtos, buscar_pedidos, buscar_politicas
+from .rag_system import buscar_produtos, buscar_pedidos, buscar_politicas, conversar_usuario
 from langchain.llms import OpenAI
 from langchain.chains import LLMChain
 from .prompts import prompt_classificacao
@@ -13,7 +13,7 @@ def classificar_intencao_llm(pergunta: str) -> str:
     chain = LLMChain(llm=llm, prompt=prompt_classificacao)
     resposta = chain.run(pergunta).strip().lower()
 
-    if resposta in ["produto", "pedido", "politica"]:
+    if resposta in ["produto", "pedido", "politica", "conversa"]:
         return resposta
     return "desconhecido"
 
@@ -27,5 +27,8 @@ def responder_usuario(mensagem: str) -> str:
     
     if intencao == "politica":
         return buscar_politicas(mensagem)
+
+    if intencao == "conversa":
+        return conversar_usuario(mensagem)
 
     return "Desculpe, não consegui entender sua intenção com essa pergunta."

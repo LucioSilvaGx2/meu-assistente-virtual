@@ -7,7 +7,7 @@ Você é um classificador de intenções. Dada a pergunta do cliente abaixo, dig
 - produto
 - pedido
 - politica
-- desconhecido
+- conversa
 
 Pergunta: {pergunta}
 Resposta (apenas a palavra, em minúsculo):
@@ -15,6 +15,24 @@ Resposta (apenas a palavra, em minúsculo):
 prompt_classificacao = PromptTemplate(
     input_variables=["pergunta"],
     template=classificacao_template
+)
+
+# Prompt para conversar com o usuário
+coversa_template = """ 
+Você é um assistente virtual simpático e educado de uma loja online.
+
+Seu objetivo aqui é **apenas conversar de forma leve e cordial** com o cliente.
+
+**Não mencione produtos, pedidos ou políticas da loja.**
+
+Responda apenas como um atendente educado em uma conversa informal.
+
+Cliente: {pergunta}
+Resposta:
+"""
+prompt_conversa = PromptTemplate(
+    input_variables=["pergunta"],
+    template=coversa_template
 )
 
 #  Prompt para PRODUTOS
